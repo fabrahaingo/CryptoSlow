@@ -140,10 +140,6 @@ header a {
   background-color: white;
   position: relative;
 }
-#portfolio .crypto:hover .delete {
-  visibility: visible;
-  color: orangered;
-}
 #portfolio .crypto .emoji {
   font-size: 1.2rem;
   margin: 0;
@@ -173,7 +169,7 @@ header a {
   position: absolute;
   top: 10px;
   right: 10px;
-  visibility: hidden;
+  color: orangered;
   font-size: 0.9rem;
   cursor: pointer;
   border: 1px solid orangered;
