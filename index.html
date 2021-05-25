@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>CryptoSlow</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="./index.html">💰</a></h1>
+      <a href="./settings.html">settings</a>
+    </header>
+    <div id="explanation">
+      <p>
+        CryptoSlow only shows the price change of cryptocurrencies since the
+        last time you checked.
+      </p>
+      <p>
+        This is to discourage you from checking the values of your investments
+        often. 💸
+      </p>
+    </div>
+    <div id="portfolio"></div>
+  </body>
+  <script src="./js/retrievePortfolio.js"></script>
+  <script src="./js/createPortfolio.js"></script>
+  <script>
+    ;(async () => {
+      let newData = await createPortfolio()
+      updateLocalStorage(newData)
+    })()
+  </script>
+</html>

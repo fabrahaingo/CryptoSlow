@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>CryptoSlow</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="./index.html">💰</a></h1>
+      <a href="./settings">settings</a>
+    </header>
+    <div id="explanation">
+      <p>Here's the settings page where you can manage your portfolio.</p>
+      <p>
+        All data is stored locally on your computer. Nothing is sent to our
+        server.
+      </p>
+    </div>
+    <div class="question">
+      <div>
+        <p>What's your name ?</p>
+        <form onsubmit="setOwner(this)">
+          <input type="text" name="owner" />
+          <input type="submit" value="Apply"" />
+        </form>
+      </div>
+      <!-- <div>
+        <p>Prefered currencies</p>
+        <form>
+          <input type="checkbox" name="euro" value="eur" />
+          <label class="currency" for="euro">Euro (€)</label>
+          <input type="checkbox" name="dollar" value="usd" />
+          <label class="currency" for="dollar">USD ($)</label>
+          <input type="submit" value="Apply" />
+        </form>
+      </div> -->
+    </div>
+    <div id="portfolio"></div>
+  </body>
+  <script src="./js/retrievePortfolio.js"></script>
+  <script src="./js/managePortfolio.js"></script>
+</html>

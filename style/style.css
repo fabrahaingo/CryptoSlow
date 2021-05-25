@@ -1,0 +1,187 @@
+* {
+  font-family: "Raleway", sans-serif;
+  color: #051653;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+header h1 {
+  margin-left: 15px;
+}
+header h1 a {
+  font-size: 3rem;
+}
+header a {
+  font-size: 1.5rem;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #051653;
+  font-weight: 500;
+}
+
+#explanation {
+  font-size: 1.3rem;
+  width: 90%;
+  max-width: 500px;
+  margin: 50px auto;
+  line-height: 30px;
+  font-weight: 500;
+}
+#explanation p {
+  margin: 0;
+}
+
+.question {
+  width: 100%;
+  background-color: #f6f8fa;
+}
+.question div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 550px;
+  margin: auto;
+  padding: 20px 0;
+}
+.question div p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.question div form {
+  margin: 0;
+}
+.question div form input {
+  border: 2px solid #051653;
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  outline: none;
+}
+.question div form input[type=submit] {
+  color: white;
+  background-color: #051653;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.question div form input[type=checkbox] {
+  display: none;
+}
+.question div form .currency {
+  display: inline-block;
+  width: 80px;
+  border: 2px solid #051653;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.editing {
+  text-align: start !important;
+}
+.editing label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 5px 0;
+}
+.editing form {
+  margin: 0;
+}
+.editing input {
+  border: 2px solid #051653;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  margin: 10px 0;
+  outline: none;
+}
+.editing input[type=submit] {
+  color: white;
+  background-color: #051653;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+.editing ::placeholder {
+  color: #05165350;
+}
+
+#portfolio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  width: 100%;
+  background-color: #f6f8fa;
+}
+#portfolio .crypto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid #051653;
+  width: 200px;
+  height: 200px;
+  padding: 30px 30px;
+  margin: 40px 10px 40px 10px;
+  text-align: center;
+  background-color: white;
+  position: relative;
+}
+#portfolio .crypto:hover .delete {
+  visibility: visible;
+  color: orangered;
+}
+#portfolio .crypto .emoji {
+  font-size: 1.2rem;
+  margin: 0;
+}
+#portfolio .crypto .name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 3px 0;
+}
+#portfolio .crypto .price {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 6px 0;
+}
+#portfolio .crypto .new {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+#portfolio .crypto .plus {
+  font-size: 8rem;
+  font-weight: 200;
+  margin: 0;
+  line-height: 60px;
+  margin-bottom: 5px;
+}
+#portfolio .crypto .delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  visibility: hidden;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 1px solid orangered;
+  padding: 3px 6px;
+}
+#portfolio .hover:hover {
+  cursor: pointer;
+  background-color: #f6f8fa;
+}
+
+/*# sourceMappingURL=style.css.map */
